@@ -1,0 +1,16 @@
+* {
+    overflow-x: hidden !important;
+    background: #525252;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.landing-txt {
+    font-size: 10vw;
+    font-weight: 800;
+    background-image: url('/assets/text-texture.jpg') !important;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 0 #000,
+        4px 4px 0 #555,
+        6px 6px 0 #aaa;
+}
