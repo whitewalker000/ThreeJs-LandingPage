@@ -35,7 +35,7 @@ const ThreeModel = () => {
 
             // Adjust the model position and scale to fit within the camera view
             const maxDimension = Math.max(size.x, size.y, size.z);
-            const scaleFactor = 4 / maxDimension; // Adjust this factor as needed
+            const scaleFactor = 6 / maxDimension; // Adjust this factor as needed
 
             model.scale.set(scaleFactor, scaleFactor, scaleFactor);
             model.position.set(-center.x * scaleFactor, -center.y * scaleFactor, -center.z * scaleFactor);

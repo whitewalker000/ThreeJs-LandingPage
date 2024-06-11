@@ -1,16 +1,30 @@
 * {
     overflow-x: hidden !important;
-    background: #525252;
+    background: #d3cdb9;
     font-family: 'Poppins', sans-serif !important;
 }
 
+.drone-page {
+    display: flex;
+}
+
 .landing-txt {
-    font-size: 10vw;
+    margin: unset !important;
+    font-size: 200px;
     font-weight: 800;
     background-image: url('/assets/text-texture.jpg') !important;
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 0 #000,
-        4px 4px 0 #555,
-        6px 6px 0 #aaa;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-txt {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: rgb(255, 136, 0);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
