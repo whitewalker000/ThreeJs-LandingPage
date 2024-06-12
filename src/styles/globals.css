@@ -4,6 +4,25 @@
     font-family: 'Poppins', sans-serif !important;
 }
 
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#749174, #92a8a1);
+    /* Gradient color */
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#92a8a1, #749174);
+}
+
+
 .drone-page {
     display: flex;
 }
@@ -12,7 +31,6 @@
     margin: unset !important;
     font-size: 200px;
     font-weight: 800;
-    /* background-image: url('../../public/assets/text-texture.jpg') !important; */
     background-image: url('../../public/assets/text-texture.jpg') !important;
     background-clip: text;
     color: transparent;
