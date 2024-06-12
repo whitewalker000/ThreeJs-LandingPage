@@ -1,6 +1,6 @@
 * {
     overflow-x: hidden !important;
-    background: #d3cdb9;
+    background: #121212;
     font-family: 'Poppins', sans-serif !important;
 }
 
@@ -12,6 +12,7 @@
     margin: unset !important;
     font-size: 200px;
     font-weight: 800;
+    /* background-image: url('../../public/assets/text-texture.jpg') !important; */
     background-image: url('../../public/assets/text-texture.jpg') !important;
     background-clip: text;
     color: transparent;
@@ -25,6 +26,6 @@
 .sub-txt {
     font-size: 1.5vw;
     font-weight: 400;
-    color: rgb(255, 136, 0);
+    color: rgb(226, 219, 212);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
