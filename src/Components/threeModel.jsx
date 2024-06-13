@@ -66,6 +66,18 @@ const ThreeModel = () => {
         controls.maxPolarAngle = Math.PI / 2;
         controls.enableZoom = false;
 
+        // Function to handle scroll event
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            // Adjust the camera's position based on scrollY
+            // Change the multiplier to control the zoom speed
+            camera.position.z = 5 - scrollY * 0.01;
+            camera.updateProjectionMatrix();
+        };
+
+        // Attach the scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
         // Handle window resize
         const handleResize = () => {
             const width = mountRef.current.clientWidth;
