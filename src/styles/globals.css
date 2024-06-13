@@ -1,7 +1,13 @@
 * {
     overflow-x: hidden !important;
-    background: #121212;
     font-family: 'Poppins', sans-serif !important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.Divider {
+    background-color: #fff !important;
 }
 
 body::-webkit-scrollbar {
@@ -24,6 +30,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 .drone-page {
+    background-color: #121212;
     display: flex;
 }
 
@@ -46,4 +53,69 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: 400;
     color: rgb(226, 219, 212);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.main-head {
+    font-size: 48px;
+    font-weight: 600;
+    color: #121212;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.whysign_cards {
+    text-align: center;
+}
+
+.signcard_whitetxt {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10%;
+}
+
+.signcard_blacktxt {
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 10%;
+}
+
+.whysign_icon {
+    margin-top: 11%;
+}
+
+.card_blue {
+    padding: 20px;
+    margin-bottom: 20%;
+    background: url('../../public/assets/blue-card.jpg');
+    box-shadow: 4px 5px 9px 3px rgba(0, 0, 0, 0.167) !important;
+    border-radius: 20px !important;
+    width: 250px !important;
+    height: 200px !important;
+}
+
+.card_white {
+    margin-bottom: 20%;
+    padding: 20px;
+    background: url('../../public/assets/white-card.jpg') !important;
+    box-shadow: 4px 5px 9px 3px rgba(0, 0, 0, 0.167) !important;
+    border-radius: 20px !important;
+    width: 250px !important;
+    height: 200px !important;
+}
+
+.whysign_all {
+    padding-top: 4%;
+    background-color: #EAF4FE;
+}
+
+.whysign_heading {
+    color: #121212;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.signx_bluetxt {
+    color: #0072ec;
 }
