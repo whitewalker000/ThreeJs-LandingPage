@@ -1,7 +1,48 @@
 import ThreeModel from '@/Components/threeModel'
-import { Box, Card, Container, Divider, Grid } from '@mui/material'
+import { Card, Container, Grid } from '@mui/material'
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
 import React from 'react'
 
+
+const itemData = [
+    {
+        img: 'https://images.unsplash.com/photo-1697394658126-bc83ae75acf3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Mountain',
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1494472155656-f34e81b17ddc?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Waterfall',
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1697395173693-1f1da0e1e0ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Village',
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1652295963237-2051c244c3bf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Train',
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1586854399870-334a91a284e8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Boat',
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Sunset',
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1641048350693-4710a172e3cd?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Droplet',
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1668265867097-f01d1ed2968c?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Swan',
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1598323462480-a6993bc76ce1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Dog',
+    },
+];
 const DronePage = () => {
     return (
         <>
@@ -89,6 +130,31 @@ const DronePage = () => {
                                     </Card>
                                 </Grid>
                             </Grid>
+                        </Grid>
+                    </Grid>
+                </Container>
+            </div>
+
+            <div className='captures'>
+                <Container>
+                    <Grid container spacing={2} display='flex' justifyContent='left'>
+                        <Grid item lg={6} alignSelf='center'>
+                            <p>Native Clicks By<br /><span>Buster Drone</span></p>
+                        </Grid>
+
+                        <Grid item lg={6} display='flex' justifyContent='right'>
+                            <ImageList sx={{ width: 600, height: 550 }} variant="woven" cols={3} gap={12}>
+                                {itemData.map((item) => (
+                                    <ImageListItem key={item.img}>
+                                        <img
+                                            srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                                            src={`${item.img}?w=161&fit=crop&auto=format`}
+                                            alt={item.title}
+                                            loading="lazy"
+                                        />
+                                    </ImageListItem>
+                                ))}
+                            </ImageList>
                         </Grid>
                     </Grid>
                 </Container>
