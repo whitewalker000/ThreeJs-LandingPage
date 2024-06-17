@@ -119,3 +119,19 @@ body::-webkit-scrollbar-thumb:hover {
 .signx_bluetxt {
     color: #0072ec;
 }
+
+.captures {
+    padding: 4%;
+    background-color: #121212;
+}
+
+.captures p {
+    font-size: 48px;
+    font-weight: 600;
+    color: rgb(226, 219, 212);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.captures img {
+    border-radius: 7px;
+}
