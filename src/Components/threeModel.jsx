@@ -99,7 +99,7 @@ const ThreeModel = () => {
         };
     }, []);
 
-    return <div ref={mountRef} style={{ width: '100%', height: '100vh' }}></div>;
+    return <div ref={mountRef} style={{ width: '100%', height: '100vh', position: 'absolute', top: '0', bottom: '0', right: '0', left: '25%' }}></div>;
 };
 
 export default ThreeModel;

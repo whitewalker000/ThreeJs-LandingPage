@@ -32,6 +32,7 @@ body::-webkit-scrollbar-thumb:hover {
 .drone-page {
     background-color: #121212;
     display: flex;
+    height: 100vh;
 }
 
 .landing-txt {
@@ -112,8 +113,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .whysign_heading {
     color: #121212;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 60px;
+    font-weight: 800;
 }
 
 .signx_bluetxt {
@@ -126,10 +127,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .captures p {
-    font-size: 48px;
-    font-weight: 600;
-    color: rgb(226, 219, 212);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin: unset !important;
+    font-size: 60px;
+    font-weight: 800;
+    background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+    background-clip: text;
+    color: transparent;
 }
 
 .captures img {
