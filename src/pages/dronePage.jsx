@@ -1,10 +1,11 @@
 import ThreeModel from '@/Components/threeModel'
-import { Card, Container, Grid } from '@mui/material'
+import { Card, Container, Divider, Grid } from '@mui/material'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import Footer from '@/Components/footer';
 
 
 const itemData = [
@@ -195,6 +196,23 @@ const DronePage = () => {
                         </Grid>
                     </Grid>
                 </Container>
+
+                <motion.div
+                    initial={{ width: '0%' }}
+                    animate={inView ? { width: '100%' } : { width: '0%' }}
+                    transition={{ duration: 2 }}
+                    className='divider-line'
+                >
+                    <Divider className='Divider' />
+                </motion.div>
+
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={inView ? { opacity: 1 } : {}}
+                    transition={{ duration: 2 }}
+                >
+                    <Footer />
+                </motion.div>
             </div>
         </>
     );
