@@ -123,6 +123,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .captures {
     padding: 4%;
+    padding-bottom: 2% !important;
     background-color: #121212;
 }
 
@@ -137,4 +138,20 @@ body::-webkit-scrollbar-thumb:hover {
 
 .captures img {
     border-radius: 7px;
+}
+
+.captures b {
+    color: rgb(226, 219, 212);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.Divider {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-color: rgb(160, 160, 160);
+    padding: unset !important;
+}
+
+.divider-line {
+    overflow: hidden;
 }
