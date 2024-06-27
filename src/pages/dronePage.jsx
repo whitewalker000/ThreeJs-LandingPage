@@ -128,7 +128,7 @@ const DronePage = () => {
 
                             <Grid className='specs-all' container spacing={2}>
                                 {specs.map((item, index) => (
-                                    <Grid className='img-txt' item lg={6}>
+                                    <Grid key={index} className='img-txt' item lg={6}>
                                         <Grid item lg={3}>
                                             <img src={item.img} alt='Charging' />
                                         </Grid>
