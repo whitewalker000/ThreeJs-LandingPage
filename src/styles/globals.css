@@ -143,3 +143,11 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
+
+.socials {
+    transition: transform 0.3s ease;
+}
+
+.socials:hover {
+    transform: translateY(-10px);
+}
