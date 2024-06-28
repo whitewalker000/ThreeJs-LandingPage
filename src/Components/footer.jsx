@@ -18,7 +18,7 @@ const Footer = () => {
                     <Grid item lg={4} display='flex' justifyContent='center'>
                         <Card className='card' style={{ display: 'flex', justifyContent: 'space-around', padding: '10px' }}>
                             <div style={{ margin: '0 10px' }}>
-                                <a href='/'><FaInstagram size={30} color='white' /></a>
+                                <a href='https://www.instagram.com/aalap_pathak/'><FaInstagram size={30} color='white' /></a>
                             </div>
                             <div style={{ margin: '0 10px' }}>
                                 <a href='https://github.com/whitewalker000' target='_blank'><FaGithub size={30} color='white' /></a>
